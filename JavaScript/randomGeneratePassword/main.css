@@ -1,0 +1,27 @@
+body {
+    text-align: center;
+}
+#container {
+    background-color: hsl(209, 29%, 71%);
+    margin: auto;
+    width: 500px;
+    height: 300px;
+    border: none;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    color: black;
+}
+
+input {
+    font-size: 1.5rem;
+    
+}
+
+label {
+    font-size: 1.5rem;
+    color: black;
+    margin-bottom: 10px;
+}

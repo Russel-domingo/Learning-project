@@ -1,0 +1,10 @@
+.name,
+.email {
+    display: block;
+}
+
+.survey {
+    width: 200px;
+    display: inline-block;
+    vertical-align: middle;
+}

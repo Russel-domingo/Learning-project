@@ -1,0 +1,21 @@
+.cat-image {
+    width: 200px;
+
+    border-radius: 15px;
+}
+
+.cat-box {
+    width: 125px;
+    height: 130px;
+    margin-left: 20px;
+    object-fit: cover;
+    object-position: center;
+}
+.cat-squre {
+    width: 125px;
+    height: 130px;
+    margin-left: 20px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 100px;
+}

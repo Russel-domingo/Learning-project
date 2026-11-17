@@ -1,0 +1,32 @@
+/* Transition
+
+    Let you animate a change from an element's initial state to and end state.
+
+    example: 
+        when you have a button with a white background and your mouse is away from it there is nothing it's just a white
+        background once your mouse hover it it's translate from grey smoothly
+        
+    code: 
+        button {
+            transition-property: background-color;
+            transition-duration: 1s;
+            transition-timing-function: ease-out;
+            transition-delay: 0.25s;
+        }
+        
+        transition-property - this determine what CSS property will be transitioned. In this case it is background-color
+        transition-duration - this determine the duration of the transition occurs. In this case the color will changed in 1second
+        transition-timing-function - This lets us change the speed of the transition over the course its duration.
+        transition-delay - this determine the delay which the transition will be start.
+    
+    This is the short handed property.   
+        button {
+            background-color: white;
+            transition: background-color 1s ease-out 0.25s;
+        } 
+        button:hover {
+            background-color: black;
+        }
+*/
+
+        

@@ -1,0 +1,25 @@
+// KEYS IN REACT
+
+// USING KEY
+
+// Keys are passed into component or a DOM element as a prop. 
+// Keys Are private.
+
+// a list of todos, each todo object has a task and an id
+// -----------KEYS ARE IMPORTANT TI DIFFERENTIATE COMPONENTS-------------
+const todos = [
+  { task: "mow the yard", id: crypto.randomUUID() },
+  { task: "Work on Odin Projects", id: crypto.randomUUID() },
+  { task: "feed the cat", id: crypto.randomUUID() },
+];
+
+function TodoList() {
+  return (
+    <ul>
+      {todos.map((todo) => (
+        // here we are using the already generated id as the key.
+        <li key={todo.id}>{todo.task}</li>
+      ))}
+    </ul>
+  );
+}

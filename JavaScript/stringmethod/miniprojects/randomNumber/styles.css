@@ -1,0 +1,23 @@
+body {
+    text-align: center;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 23px;
+    background-color: rgb(23, 90, 126);
+    cursor: pointer;
+    transition: background-color 0.5s;
+    color: white;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background-color:  rgb(13, 56, 79);
+    color: black;
+}
+
+.label {
+    margin-top: 10px;
+    font-size: 40px;
+}

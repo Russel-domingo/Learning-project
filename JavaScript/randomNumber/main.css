@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+
+#roll {
+    padding: 10px 20px;
+    font-size: 3em;
+    border-radius: 5px;
+}
+
+.labels {
+    font-size:  3em;
+}

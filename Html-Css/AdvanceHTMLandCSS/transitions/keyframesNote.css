@@ -1,0 +1,55 @@
+/* 
+Animation vs Transition
+
+    Transition animate element from one state to another, while Animation explicitly loops
+    Transition need a trigger such as the use of pseudo-classes like :hover, :focus or by adding and adding/removing a class via JavaScript
+    Animation do not need such trigger. */
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ball {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 50%;
+    animation-duration: 2s;
+    animation-name: change-color;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate; 
+}
+
+@keyframes change-color {
+    from {
+        background-color: red;
+    }
+    50% {
+        transform: scale(2);
+        background-color: blue;
+    }
+    to {
+        background-color: green;
+    }
+}
+
+/*  animation-duration: 
+        The animation duration to complete the animation.
+    animation-name:
+        This is the custom name that need to call in the @keyframe
+    animation-iteration-count:
+        This is the count that the animation run, you can set it whatever you like
+
+@keyframes
+    The keyframes at rule reference the change-color name we defined. Then we use the from and to properties
+    to change the background-color of the ball from red to green
+
+50%
+    The 50% is the another keyframes for when the animation-duration is at 50%, or 1 second, 
+    this means as well the background-color changing to another value.
+*/

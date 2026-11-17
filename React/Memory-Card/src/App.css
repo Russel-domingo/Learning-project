@@ -1,0 +1,169 @@
+
+#root {
+  min-height: 100vh;
+}
+
+.game {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  padding: 56px 0;
+}
+
+.game-header {
+  text-align: center;
+  margin-bottom: 42px;
+}
+
+.eyebrow {
+  color: #bd8b4a;
+  font-size: 0.75rem;
+  letter-spacing: 0.28em;
+  font-weight: 700;
+}
+
+.game-header h1 {
+  font-family: "Cinzel", serif;
+  font-size: clamp(2.3rem, 6vw, 4.5rem);
+  color: #e5c18b;
+  letter-spacing: 0.08em;
+  margin: 14px 0;
+  text-shadow: 0 0 25px #a66b2933;
+}
+
+.subtitle {
+  color: #a8a09a;
+  font-size: 0.95rem;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.hero-card {
+  overflow: hidden;
+  background: linear-gradient(160deg, #27211d, #151311);
+  border: 1px solid #55402c;
+  border-radius: 8px;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.hero-card:hover {
+  transform: translateY(-6px);
+  border-color: #c29453;
+  box-shadow: 0 12px 30px #0008;
+}
+
+.hero-image {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: #211a16;
+}
+
+.hero-info {
+  padding: 14px;
+}
+
+.hero-info h2 {
+  font-family: "Cinzel", serif;
+  font-size: 1rem;
+  color: #f1d8b0;
+  margin: 0 0 8px;
+}
+
+.hero-attribute {
+  color: #a99b8c;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.hero-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.role-tag {
+  color: #d8b47b;
+  background: #483522;
+  border: 1px solid #654b2d;
+  border-radius: 4px;
+  padding: 4px 7px;
+  font-size: 0.68rem;
+}
+
+.status {
+  text-align: center;
+  margin-top: 100px;
+  color: #e5c18b;
+}
+
+@media (max-width: 800px) {
+  .hero-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+  }
+}
+
+@media (max-width: 520px) {
+  .game {
+    padding: 32px 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .hero-info {
+    padding: 10px;
+  }
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  color: #e5c18b;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.game-over {
+  text-align: center;
+  color: #d65c4a;
+  margin-bottom: 24px;
+}
+
+.game-over {
+  text-align: center;
+  margin: 24px 0;
+  color: #d65c4a;
+}
+
+.game-over button {
+  background: #8b2929;
+  color: #fff;
+  border: 1px solid #c29453;
+  padding: 12px 24px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.game-over button:hover {
+  background: #ad3838;
+}
+
+.hero-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}

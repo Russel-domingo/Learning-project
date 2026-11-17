@@ -1,0 +1,51 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom:50px;
+}
+
+.circle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    border-radius: 50px;
+    margin-bottom:50px;
+}
+
+.wrap {
+    
+    padding-left: 20px;
+    padding-bottom: 15px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    width: 300px;
+    margin-bottom: 10px;
+   
+}
+
+.install {
+    background-color: rgb(33, 33, 33);
+    width: 360px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.install-p1 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.install-p2 {
+
+    font-size: 15px;
+    font-weight: bold;
+    color: gray;
+}

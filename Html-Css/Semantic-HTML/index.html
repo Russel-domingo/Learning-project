@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic HTML Note</title>
+</head>
+<body>
+    <div class="button-container">
+        <div class="rock" tabindex="0">Rock</div>
+        <div class="paper" tabindex="0">Paper</div>
+        <div class="scissors" tabindex="0">Scissors</div>
+    </div>
+    <!-- A sighted user would most likely have no trouble knowing what is this.
+     but what about the screen reader user like the blind people it will says rock, paper, and scissors -->
+    
+    <div class="button-container">
+        <button class="rock" tabindex="0">Rock</button>
+        <button class="paper">Paper</button>
+        <button class="scissors">Scissors</button>
+    </div>
+
+    <script>
+        const button = document.querySelectorAll("button");
+        function nameAlerter(e) {
+            if (e.type == "click" || e.type === "" || e.type === "enter") {
+                alert(e.target.textContent);
+            }
+        }
+        
+        button.forEach(button => {
+            button.addEventListener('click', nameAlerter);
+            button.addEventListener('keydown', nameAlerter);
+        })
+    </script>
+    <!-- The screen reader will announce the text and the context as well as the element "Rock button" -->
+
+    <!-- 
+    USING SEMANTIC HTML CORRECTLY
+
+     You want to think of what your intent for users is and what context you want or need to provide. 
+     
+     If the user meant to click something, whether it's actual button or not, you will usually want to use <button> element
+        
+     If you want to provide some sort of tabular dato to the user, use a <table> element along with the element related to them.
+        
+     When you use a input element, you should create a relationship between it and a <label> element. A <label> element
+     provides context for what an input actually means to assistive technologies. 
+
+     example
+      <label for="name"> Name </label>
+      <input type="text" id="name">
+
+      You should always use the type that make the most sense for its intended use.
+      
+      When you want to present a list, you should use the appropriate list element (<ol>, <ul>, <dl>). 
+
+    HEADING AND LANDMARKS
+        Landmarks are the HTML elements that act like a region of a page. There a seven HTML elements that define these landmarks region
+            <aside>
+            <footer>
+            <form>
+            <header>
+            <main>
+            <nav>
+            <section>
+        
+
+        
+     -->
+</body>
+</html>
