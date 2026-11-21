@@ -5,7 +5,7 @@ A simple React application that helps users discover random GitHub repositories 
 This project uses the GitHub REST API to fetch repository information and display details such as the repository name, description, programming language, stars, forks, and open issues.
 
 This is a personal learning project built to practice React, API integration, state management, and Tailwind CSS.
-## Live Demo
+## Project Url
 https://randomrep-three.vercel.app/
 ## Features
 - Language Selection – Choose a programming language to discover repositories.
