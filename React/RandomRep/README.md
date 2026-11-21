@@ -58,3 +58,6 @@ http://localhost:5173
 This project was created for educational and practice purposes only. It is not affiliated with, endorsed by, or officially connected to GitHub.
 
 Repository information is provided by the GitHub REST API. API availability and rate limits may affect the application's functionality.
+
+roadmap.sh project
+https://roadmap.sh/projects/github-random-repo
