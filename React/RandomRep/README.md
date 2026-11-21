@@ -37,11 +37,11 @@ Make sure you have installed:
 1. Clone the repository
 
 ```bash
-  https://github.com/Russel-domingo/Learning-project/tree/main/React/RandomRep
+https://github.com/Russel-domingo/Learning-project/tree/main/React/RandomRep
 ```
 2. Navigate to the project folder
 ```bash
-cd RandomRep
+cd Learning-project/React/RandomRep
 ```
 3. Install dependencies
 ```bash
