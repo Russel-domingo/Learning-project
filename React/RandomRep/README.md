@@ -1,16 +1,60 @@
-# React + Vite
+# GitHub Random Repository Finder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React application that helps users discover random GitHub repositories based on their preferred programming language.
 
-Currently, two official plugins are available:
+This project uses the GitHub REST API to fetch repository information and display details such as the repository name, description, programming language, stars, forks, and open issues.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+This is a personal learning project built to practice React, API integration, state management, and Tailwind CSS.
 
-## React Compiler
+## Features
+- Language Selection – Choose a programming language to discover repositories.
+- Random Repository Generator – Fetches and displays a random repository.
+- Repository Information – Displays the repository name and description.
+- Repository Statistics – Shows stars, forks, and open issues.
+- Programming Language Icons – Displays language logos using Devicon.
+- Refresh Button – Discover another random repository.
+- Loading State – Displays a loading message while fetching data.
+- Error Handling – Handles API request errors.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Built With 
+- React
+- Vite
+- Tailwind CSS
+- GitHub Rest API
+- Lucide React
+- Devicon
 
-## Expanding the ESLint configuration
+## Getting Started
+Follow this steps to run the project locally
+## Prerequisite 
+Make sure you have installed: 
+- NodeJS 
+- npm
+- Git
+## Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Clone the repository
+
+```bash
+  https://github.com/Russel-domingo/Learning-project/tree/main/React/RandomRep
+```
+2. Navigate to the project folder
+```bash
+cd RandomRep
+```
+3. Install dependencies
+```bash
+npm install
+```
+4. Start the development server
+```bash
+npm run dev
+```
+5. Open the local URL displayed in the terminal
+```bash
+http://localhost:5173
+```
+## Disclaimer 
+This project was created for educational and practice purposes only. It is not affiliated with, endorsed by, or officially connected to GitHub.
+
+Repository information is provided by the GitHub REST API. API availability and rate limits may affect the application's functionality.
